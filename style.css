@@ -47,9 +47,10 @@ form .display input{
     flex: 1;
     font-size: 45px;
     background: black;
+    border-radius: 0px;
 }
 form input.zero{
     width: 130px;
     text-align: left;
-    padding-left: 23px;;
+    padding-left: 23px;
 }
