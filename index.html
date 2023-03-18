@@ -12,13 +12,13 @@
         <div class="calculator">
             <form>
                 <div class="display">
-                    <input type="text" name="display">
+                    <input type="text" name="display" id="result">
                 </div>
                 <div>
-                    <input type="button" value="AC" class="top" onclick="display.value = ''">
-                    <input type="button" value="DL" class="top" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="AC" class="top" onclick="clrS()">
+                    <input type="button" value="DL" class="top" onclick="delLast()">
                     <input type="button" value="." class="top" onclick="display.value += '.'">
-                    <input type="button" value="÷" class="right" onclick="display.value += '/'">
+                    <input type="button" value="÷" class="right" onclick="display('/')">
                 </div>
                 <div>
                     <input type="button" value="7" onclick="display.value += '7'">
@@ -41,10 +41,11 @@
                 <div>
                     <input type="button" value="0" class="zero" onclick="display.value += '0'">
                     <input type="button" value="00" onclick="display.value += '00'">
-                    <input type="button" value="=" class="right" onclick="display.value = eval(display.value)">
+                    <input type="button" value="=" class="right" onclick="calculate()">
                 </div>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
